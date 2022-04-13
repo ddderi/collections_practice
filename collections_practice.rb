@@ -35,7 +35,7 @@ end
 
 def add_s(array)
     newarray = []
- array.each_with_index.collect {|element, index| index != 1 ? element[element.length] = "s" : element
+ array.each_with_index {|element, index| index != 1 ? element[element.length] = "s" : element
 newarray << element}
 newarray
 end
